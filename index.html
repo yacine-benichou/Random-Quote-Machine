@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manga Quote Machine</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <div class="d-flex vh-100 flex-column justify-content-center"> <!--center the wrapper and all his child elements-->
+      <div id="wrapper" class="container-fluid d-flex w-75 justify-content-center">
+          <div id="quote-box" class="jumbotron jumbotron-fluid">
+              <div id="text-box" class="display-6">
+                  <p id="text"> <!--make sure that the text change line when it is about to go out of the text-box-->
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum minus neque ducimus praesentium. Animi, nulla aliquid hic eos rerum ducimus ullam aspernatur voluptas impedit, dolorum a voluptatem natus error tempora!.
+                  </p>
+              </div>
+              <div id="author-box">
+                <p id="author">
+
+                </p>
+              </div>
+              <div id="button-box">
+                <button type="button" class="btn btn-primary"><a class="text-decoration-none text-reset" id="tweet-quote" target="_blank" href="twitter.com/intent/tweet"><i class="fab fa-twitter"></i>  Tweet this quote</a></button>
+                <button id="new-quote" type="button" class="btn btn-secondary float-end"><a>New quote</a></button> <!-- pull-right is pretty self-explanatory it puts the button to the right of the div-->
+              </div>
+            </div>
+        </div>
+        <footer class="d-flex justify-content-center">by Yacine BENICHOU</footer>
+    </div>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="app.js"></script>
+</html>
